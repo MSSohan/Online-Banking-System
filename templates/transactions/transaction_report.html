@@ -41,13 +41,13 @@
         <tr class="{% cycle 'bg-gray-300' 'bg-white-100' %}">
             <td class="border px-4 py-2 text-center">{{ transaction.get_transaction_type_display }}</td>
             <td class="border px-4 py-2 text-center">{{ transaction.timestamp }}</td>
-            <td class="border px-4 py-2 text-center">₹ {{ transaction.amount }}</td>
-            <td class="border px-4 py-2 text-center">₹ {{ transaction.balance_after_transaction }}</td>
+            <td class="border px-4 py-2 text-center">$ {{ transaction.amount }}</td>
+            <td class="border px-4 py-2 text-center">$ {{ transaction.balance_after_transaction }}</td>
         </tr>
         {% endfor %}
         <tr class="bg-gray-600 text-white">
             <th class="px-4 py-2 text-right" colspan="3">Final Balance</th>
-            <th class="px-4 py-2 text-center">₹ {{ account.balance }}</th>
+            <th class="px-4 py-2 text-center">$ {{ account.balance }}</th>
         </tr>
         </tbody>
     </table>
