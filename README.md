@@ -1,4 +1,4 @@
-# Online Banking System V2.0.2
+# Online Banking System
 
 This is an Online Banking Concept created using Django Web Framework.
 
@@ -21,7 +21,7 @@ This is an Online Banking Concept created using Django Web Framework.
 
 Be sure you have the following installed on your development machine:
 
-+ Python >= 3.7
++ Python >= 3.7 (must be)(better create a virtual environment)
 + Redis Server
 + Git
 + pip
@@ -31,6 +31,7 @@ Be sure you have the following installed on your development machine:
 
 + celery==4.4.7
 + Django==3.2
++ importlib-metadata==4.13.0
 + django-celery-beat==2.0.0
 + python-dateutil==2.8.1
 + redis==3.5.3
@@ -50,14 +51,8 @@ To setup a local development environment:
 
 Create a virtual environment in which to install Python pip packages. With [virtualenv](https://pypi.python.org/pypi/virtualenv),
 ```bash
-virtualenv venv            # create a virtualenv
-source venv/bin/activate   # activate the Python virtualenv 
-```
-
-or with [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/),
-```bash
-mkvirtualenv -p python3 {{project_name}}   # create and activate environment
-workon {{project_name}}   # reactivate existing environment
+python -m venv .venv            # create a virtualenv # or manually create a virtualenv
+.\.venv\Scripts\activate   # activate the Python virtualenv 
 ```
 
 Clone GitHub Project,
