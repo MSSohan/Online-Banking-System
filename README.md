@@ -36,15 +36,6 @@ Be sure you have the following installed on your development machine:
 + python-dateutil==2.8.1
 + redis==3.5.3
 
-## Install Redis Server
-
-[Redis Quick Start](https://redis.io/topics/quickstart)
-
-Run Redis server
-```bash
-redis-server
-```
-
 ## Project Installation
 
 To setup a local development environment:
@@ -77,15 +68,4 @@ Run the web application locally,
 python manage.py runserver # 127.0.0.1:8000
 ```
 
-Create Superuser,
-```bash
-python manage.py createsuperuser
-```
-
-Run Celery
-(Different Terminal Window with Virtual Environment Activated)
-```bash
-celery -A banking_system worker -l info
-
-celery -A banking_system beat -l info
-```
+## More Help [Projectworlds](https://projectworlds.in/online-banking-system-project-in-python-django/)
